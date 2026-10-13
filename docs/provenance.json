@@ -1,0 +1,80 @@
+{
+  "schema": "flora-kit-extraction-1",
+  "version": "0.1.0",
+  "extractedAt": "2026-10-13",
+  "source": {
+    "repository": "https://github.com/kblood/universe-atlas",
+    "commit": "45251c1b3edaafbcd5948e3ccb4739e0b20b8481"
+  },
+  "license": "UNLICENSED",
+  "upstream": {
+    "project": "nms",
+    "paths": [
+      "shared/proceduralTree.ts",
+      "shared/heroContent.ts"
+    ],
+    "attribution": "Original flora-field.ts header retained; no new license grant inferred."
+  },
+  "contracts": {
+    "placement": "unchanged",
+    "time": "branded Myr with runtime guard",
+    "fadeVersion": "atlas-flora-fade-1",
+    "treeArchetypes": "preview geometry, not Atlas PlanetForest/GLB runtime"
+  },
+  "adaptations": [
+    "Allocation harness resolves Three through the package instead of a hardcoded local node_modules file.",
+    "Allocation helper retains the current-source GC/no-op gate; historical Atlas Git baseline comparison remains in Atlas."
+  ],
+  "files": [
+    {
+      "path": "src/flora-field.ts",
+      "sha256": "348fac718c810879192ac9d53cb6c0bbb7d007de89a635355c3e0936ebf887b6",
+      "sourceSha256": "348fac718c810879192ac9d53cb6c0bbb7d007de89a635355c3e0936ebf887b6"
+    },
+    {
+      "path": "src/flora-culling.ts",
+      "sha256": "8e778d031b7715637c7269bfaf1378603023b307462b552befa1a0e94db06f5c",
+      "sourceSha256": "8e778d031b7715637c7269bfaf1378603023b307462b552befa1a0e94db06f5c"
+    },
+    {
+      "path": "src/det-math.ts",
+      "sha256": "65127828f2266db2f7b600886a9d0e5703bd8111f9e868fd847f9b4d2b5be4c4",
+      "sourceSha256": "65127828f2266db2f7b600886a9d0e5703bd8111f9e868fd847f9b4d2b5be4c4"
+    },
+    {
+      "path": "tests/flora-field.test.mjs",
+      "sha256": "8715915776059fc7f24e5ad70ffe146c0a92b9bd8a2d508d1d0d1926e3938070",
+      "sourceSha256": "8715915776059fc7f24e5ad70ffe146c0a92b9bd8a2d508d1d0d1926e3938070"
+    },
+    {
+      "path": "tests/flora-recipe.test.mjs",
+      "sha256": "614c70182e772866071d8c28e9a9ee670aacfea5d4d1254685a08d020f13e8d4",
+      "sourceSha256": "614c70182e772866071d8c28e9a9ee670aacfea5d4d1254685a08d020f13e8d4"
+    },
+    {
+      "path": "tests/flora-understory-geometry.test.mjs",
+      "sha256": "c19944128bea39084d6c76692fd9d92baebeec37e63173ce9d461d5ca6e38826",
+      "sourceSha256": "c19944128bea39084d6c76692fd9d92baebeec37e63173ce9d461d5ca6e38826"
+    },
+    {
+      "path": "tests/flora-culling.test.mjs",
+      "sha256": "4b1444255f18413aabb335cac554acd584f4c0ac2a7ed00ba9f730278366b9dc",
+      "sourceSha256": "4b1444255f18413aabb335cac554acd584f4c0ac2a7ed00ba9f730278366b9dc"
+    },
+    {
+      "path": "tests/helpers/alloc-audit/check.mjs",
+      "sha256": "b252d1d632f8663e75933d4ae7d9a4ff7e3378d81c4890fbfb15ef6250c0ccd6",
+      "sourceSha256": "b252d1d632f8663e75933d4ae7d9a4ff7e3378d81c4890fbfb15ef6250c0ccd6"
+    },
+    {
+      "path": "tests/helpers/alloc-audit/alloc-lib.mjs",
+      "sha256": "cd716fa45b99a90ac64159fd8e735f2e25df323ecb6c3abb3cb928329e5b8978",
+      "sourceSha256": "5da95862c0da95a5335642a088501b19d4a63721adbac290ccb6a75f2f5b60eb"
+    },
+    {
+      "path": "tests/helpers/alloc-audit/h-flora.mjs",
+      "sha256": "7ba1ce56abba5c714c67d2fa686d6cca41fa6bff838b971d8759977aac9c930b",
+      "sourceSha256": "500b6ef8d580e64eeeabbe49ba9bfdf6f5d3c192a01262d5a299c2954c67b840"
+    }
+  ]
+}

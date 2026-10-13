@@ -1,0 +1,20 @@
+{
+  "name": "flora-kit",
+  "version": "0.1.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "type": "module",
+  "description": "Deterministic flora placement, recipe evaluation, preview geometry and bounded instanced rendering",
+  "exports": {
+    "./v1/field": "./src/flora-field.ts",
+    "./v1/culling": "./src/flora-culling.ts"
+  },
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "check": "tsc --noEmit",
+    "build": "npm run check",
+    "test": "node --test tests/flora-field.test.mjs tests/flora-recipe.test.mjs tests/flora-understory-geometry.test.mjs tests/flora-culling.test.mjs tests/flora-kit-boundary.test.mjs"
+  },
+  "dependencies": { "three": "npm:super-three@0.181.0" },
+  "devDependencies": { "@types/three": "0.181.0", "typescript": "5.9.3" }
+}
