@@ -23,7 +23,8 @@
   },
   "adaptations": [
     "Allocation harness resolves Three through the package instead of a hardcoded local node_modules file.",
-    "Allocation helper retains the current-source GC/no-op gate; historical Atlas Git baseline comparison remains in Atlas."
+    "Allocation helper retains the current-source GC/no-op gate; historical Atlas Git baseline comparison remains in Atlas.",
+    "Allocation audit validates controls repeatedly when GCProfiler first-use heap noise is present; invalid samples are retried, never subtracted or accepted."
   ],
   "files": [
     {
@@ -68,7 +69,7 @@
     },
     {
       "path": "tests/helpers/alloc-audit/alloc-lib.mjs",
-      "sha256": "cd716fa45b99a90ac64159fd8e735f2e25df323ecb6c3abb3cb928329e5b8978",
+      "sha256": "47377c3beb3ae6123d99ad35727c34d22103ccc3c738592ca56e4d57cfdf4966",
       "sourceSha256": "5da95862c0da95a5335642a088501b19d4a63721adbac290ccb6a75f2f5b60eb"
     },
     {
